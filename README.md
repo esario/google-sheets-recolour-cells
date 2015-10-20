@@ -1,7 +1,6 @@
 ### Spreadsheet scripts ###
 This project includes some examples of how to use Google Sheets to
- * Visualize data on a dashboard
- * View recent changes by recoloring cells of the sheet
+view recent changes by recoloring cells of the sheet
 
 
 #### background_colors.js ####
@@ -18,13 +17,4 @@ This project includes some examples of how to use Google Sheets to
     Reopen it again, and notice all cells will change color based on when they
     were last edited.
 
-
-
-#### /dashboard ####
-
-    The dashboard assumes you are running it on a web server (start a local
-    web server if needed).
-
-    The only configuration required is to modify dashboard.js with the key of
-    your spreadsheet.
 
