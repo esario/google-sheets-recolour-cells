@@ -32,8 +32,8 @@ function onEdit(e){
   var range = e.range;
   // Set a comment on the edited cell to indicate when it was changed.
   range.setNote(new Date());
-  // Turn background green; 
-  range.setBackgroundColor('green');
+  // Turn background greenish; 
+  range.setBackgroundColor('#38f345');
 }
 
 
@@ -66,16 +66,16 @@ function onOpen(){
       delta_seconds = (new Date() - last_edited) / 1000
       // Turn green if < 24 hours
       if (delta_seconds < 60 * 60 * 24) {
-         bgcolors[i][j] = '#99FF99' // greenish
+         bgcolors[i][j] = '#38f345' // greenish
          continue
       }
       
       if (delta_seconds < 60 * 60 * 48) {
-         bgcolors[i][j] = '#FFFF66'; // yellowish
+         bgcolors[i][j] = '#a2ffa9'; // light greenish
          continue
       }
       // if older than >2 days, make it white again
-      bgcolors[i][j] = '#eee';
+      bgcolors[i][j] = '#ffffff';
     }
   }
   range.setBackgrounds(bgcolors); // Batch set colors for entire range.
